@@ -1,0 +1,335 @@
+* {
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  width: 100vw;
+  max-width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  position: relative;
+  z-index: 20;
+  background: url(../img/fondo-ladrillos.png) no-repeat top left, url(../img/fonfo-pizza.png) no-repeat top right;
+  background-size: 50% 100%;
+}
+main .navegation {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 30px 0px 0px 20px;
+}
+main .navegation img {
+  width: 50px;
+  height: 50px;
+}
+main .navegation ul {
+  width: 93%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+main .navegation ul li {
+  margin-left: 40px;
+}
+main .navegation ul li a {
+  text-align: center;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+}
+main .navegation ul li img {
+  width: 70%;
+  height: 40%;
+  max-width: 70%;
+  max-height: 40%;
+}
+main .social {
+  position: absolute;
+  left: 94.5%;
+  top: 35%;
+  margin-right: 20px;
+}
+main .social ul {
+  display: flex;
+  flex-flow: column wrap;
+  list-style: none;
+}
+main .social ul li {
+  margin-bottom: 30px;
+}
+main .logo {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .logo section {
+  width: 50%;
+  position: relative;
+}
+main .logo section img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+main .logo section button {
+  width: 20%;
+  height: 7%;
+  position: absolute;
+  top: 84%;
+  left: 82.5%;
+  border-radius: 15px;
+  border: none;
+}
+main .logo section button a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: red;
+  font-size: 15px;
+}
+
+.center {
+  width: 100%;
+  height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  background: url(../img/fondo-central.png) no-repeat;
+  background-size: 100% 100%;
+}
+.center article {
+  width: 44%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: justify;
+  color: white;
+}
+.center article h2 {
+  width: 100%;
+  font-size: 50px;
+}
+.center article p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.center article h3 {
+  width: 50%;
+  font-size: 28px;
+}
+.center article button {
+  width: 50%;
+  height: 50px;
+  margin-top: 12px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.center article button a {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  text-decoration: none;
+  color: red;
+}
+.center figure {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.center figure .principal {
+  width: 72%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+.center figure .principal a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center figure .principal a img {
+  width: 100%;
+}
+.center figure .carrete {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.center figure .carrete a {
+  width: 80%;
+  height: 15%;
+}
+.center figure .carrete a img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.bottom {
+  width: 100%;
+  height: 100vh;
+  max-width: 100vw;
+  background-color: blue;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/fondo-bottom.png);
+  background-size: 100% 100%;
+}
+.bottom h2 {
+  color: white;
+  align-self: flex-start;
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+.bottom article {
+  width: 80%;
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  grid-template-rows: repeat(2, 50%);
+  grid-template-areas: "masa masa pizza pizza" "masa masa moto comida";
+}
+.bottom article figure {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.bottom article figure img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.bottom article figure .float {
+  z-index: 200;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: white;
+  text-align: justify;
+}
+.bottom article figure .float h3,
+.bottom article figure .float span {
+  font-size: 15px;
+  margin-right: 10px;
+}
+.bottom article figure .float p {
+  width: 100%;
+  margin-top: 5px;
+  text-align: start;
+}
+.bottom .masa {
+  grid-area: masa;
+}
+.bottom .pizza {
+  grid-area: pizza;
+}
+.bottom .moto {
+  grid-area: moto;
+}
+.bottom .comida {
+  grid-area: comida;
+}
+
+footer {
+  width: 100%;
+  height: 30vh;
+  max-width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #090909;
+}
+footer section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+footer section h3 {
+  margin-top: 10px;
+}
+footer section ul {
+  margin-top: 5px;
+  list-style: none;
+}
+footer section figure {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer section figure img {
+  width: 100%;
+  height: 90%;
+}
+
+@media screen and (max-width: 1000px) {
+  .bottom h2 {
+    align-self: center;
+  }
+  .bottom article {
+    width: 100%;
+    grid-template-columns: repeat(4, 25%);
+  }
+}
+@media screen and (max-width: 990px) {
+  html {
+    max-width: 100vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
